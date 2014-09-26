@@ -3,10 +3,7 @@ formInputDemo
 
 Simple demo featuring:
 
-  CSS Based Animations inspired by Mary Lou
-  
-  Modal Input
-  -----------
+  CSS Based Animated Modal inspired by [Mary Lou](http://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/)
   
   ### AngularJs
 
@@ -17,5 +14,4 @@ Simple demo featuring:
   Scalable | Modular Best Practices
 
     - module based file structure
-
     - CSSWizardy influenced SASS file structure, commenting, and naming convention
