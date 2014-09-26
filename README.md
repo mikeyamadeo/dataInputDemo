@@ -7,7 +7,7 @@ Simple demo featuring:
   
   Modal Input
   
-  ###AngularJs
+  ### AngularJs
 
     magic of data-binding
 
