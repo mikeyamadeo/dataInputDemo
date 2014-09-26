@@ -1,0 +1,25 @@
+{
+  "name": "FormInput",
+  "version": "0.0.0",
+  "description": "Modal window takes input to display in form",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mikeyamadeo"
+  },
+  "author": "Mikey Murphy",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-concat": "~0.5.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-connect": "~0.8.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-sass": "~0.8.1",
+    "grunt-contrib-cssmin": "~0.10.0"
+  }
+}

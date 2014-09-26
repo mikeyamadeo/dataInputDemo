@@ -1,0 +1,21 @@
+{
+  "name": "formInput",
+  "version": "0.0.0",
+  "authors": [
+    "Mikey Murphy <mikeyamadeo@gmail.com>"
+  ],
+  "description": "Modal window takes input to display in form",
+  "main": "src/input.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/common",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.25"
+  }
+}
