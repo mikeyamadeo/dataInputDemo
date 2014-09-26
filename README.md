@@ -7,14 +7,14 @@ Simple demo featuring:
   
   Modal Input
   
-  ##AngularJs
+  ###AngularJs
 
-    > magic of data-binding
+    magic of data-binding
 
-    > form validation
+    form validation
 
   Scalable | Modular Best Practices
 
-    > module based file structure
+    module based file structure
 
-    > CSSWizardy influenced SASS file structure, commenting, and naming convention
+    CSSWizardy influenced SASS file structure, commenting, and naming convention
