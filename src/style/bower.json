@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "inuit-starter-kit": "~0.2.8",
+    "inuit-layout": "~0.3.2"
+  }
 }
