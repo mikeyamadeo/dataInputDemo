@@ -1,0 +1,203 @@
+/*------------------------------------*\
+    #DATAINPUTDEMO
+\*------------------------------------*/
+
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Globally-available variables and config.
+ *
+ * TOOLS
+ * Mixins...............Useful mixins.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * BASE
+ * Headings.............H1–H6 styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrapping and constraining elements.
+ *
+ * COMPONENTS
+ * Page-head............The main page header.
+ * Page-foot............The main page footer.
+ * Buttons..............Button elements.
+ *
+ * TRUMPS
+ * Text.................Text helpers.
+ *
+ *
+ * Taken from http://cssguidelin.es/
+ *
+ */
+
+
+/**
+ * #SETTINGS - Global variables, site-wide settings, config switches, etc.
+ */
+@import "bower_components/inuit-defaults/settings.defaults";
+@import "settings.colors";
+
+
+
+
+
+/**
+ * #TOOLS - Site-wide mixins and functions.
+ */
+@import "bower_components/inuit-functions/tools.functions";
+@import "bower_components/inuit-mixins/tools.mixins";
+@import "bower_components/bourbon/dist/bourbon";
+@mixin background-image-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+
+
+/**
+ * #GENERIC - Low-specificity, far-reaching rulesets (e.g. resets).
+ */
+@import "bower_components/inuit-normalize/generic.normalize";
+@import "bower_components/inuit-reset/generic.reset";
+@import "bower_components/inuit-box-sizing/generic.box-sizing";
+
+
+
+
+
+/**
+ * #BASE - Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+ */
+@import "bower_components/inuit-page/base.page";
+@import "bower_components/inuit-headings/base.headings";
+@import "bower_components/inuit-images/base.images.scss";
+html, body { height: 100%; }
+
+
+
+
+/**
+ * #OBJECTS - Objects, abstractions, and design patterns (e.g. .media {}).
+ */
+
+/**
+ * Remember:
+ * http://css-tricks.com/fighting-the-space-between-inline-block-elements/
+ */
+$inuit-enable-layout--flush:    true;
+$inuit-enable-layout--middle:   true;
+@import "bower_components/inuit-layout/objects.layout";
+
+
+
+
+
+/**
+ * #COMPONENTS - Discrete, complete chunks of UI (e.g. .carousel {}).
+ */
+@import "components.modal";
+.table {
+    max-width: 14em;
+    margin: 0 auto;
+}
+tbody {
+    background-color: $color-primary;
+}
+.table__cell {
+    padding: 10px 32px;
+    color: white;
+}
+th.table__cell {
+    background-color: $color-secondary;
+    color: $color-secondary-compliment
+}
+
+
+.form-group {
+    // text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+.form-group > label,
+.form-group > input {
+    display: block;
+
+}
+.form-group input {
+    width: 100%;
+    padding: 8px 0 8px 5px;
+    color: black;
+}
+.form-group .error {
+    color: $color-highlight;
+}
+
+
+
+.btn {
+    display: block;
+
+    margin-top:    0;
+    margin-right:  auto;
+    margin-bottom: 8px;
+    margin-left:   auto;
+
+    padding: 8px 40px;
+    width: 100%;
+    outline: none;
+    border: solid 1px $color-highlight;
+    color: white;
+    @include border-top-radius(5px);
+    @include border-bottom-radius(5px);
+    @include border-left-radius(5px);
+    @include border-right-radius(5px);
+    background-color: $color-highlight;
+}
+
+.btn:disabled {
+    background-color: gray;
+    border: solid 1px gray;
+}
+.btn:hover:disabled {
+    color: white;
+    background-color: gray;
+    border: solid 1px gray;
+}
+
+.btn:hover {
+    background-color: white;
+    border: solid 1px $color-highlight;
+    color: $color-highlight;
+}
+
+.btn--secondary {
+    border: solid 1px $color-highlight-2;
+    background-color: $color-highlight-2;
+
+}
+.btn--secondary:hover {
+    background-color: white;
+    border: solid 1px $color-highlight-2;
+    color: $color-highlight-2;
+}
+
+
+
+
+
+/**
+ * #TRUMPS - High-specificity, very explicit selectors. Overrides and helper classes.
+ */
+@import "bower_components/inuit-widths/trumps.widths";
+
+
+
