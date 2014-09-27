@@ -52,6 +52,7 @@ angular.module('controller.dataInput', [])
 
                 //reset form
                 $scope.user = angular.copy(user);
+                data.$setPristine();
             }
         }
 
