@@ -8,6 +8,7 @@ CSS Based Animated Modal inspired by [Mary Lou](http://tympanus.net/codrops/2013
 AngularJs:
 - magic of ng-model, scope, and data-binding
 - form validation. Great stuff @ [scotch.io](http://scotch.io/tutorials/javascript/angularjs-form-validation)
+- simple custom directive for toggling modal
 
 Scalable | Modular Best Practices:
 - module based file structure. see [this medium article](https://medium.com/opinionated-angularjs/scalable-code-organization-in-angularjs-9f01b594bf06) by Gert Hengeveld for furthur reference.
